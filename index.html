@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Dinner picker</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <h1>Christmas Dinner Picker</h1>
+    <p id="india-p">with some Indian Tadka</p>
+    <p class="result" id="result">
+      Your ideal Christmas dinner is <span id="food">...</span>
+    </p>
+    <img id="food-pic" src="./image/xmasfood.jpg" />
+    <form>
+      <label for="name">How many guests are coming?</label>
+      <input id="num-input" type="number" id="guests" name="guests" />
+      <div class="veggie">
+        <input
+          type="checkbox"
+          id="vegetarian-input"
+          name="vegetarian"
+          checked
+        />
+        <label for="name">Vegetarian?</label>
+      </div>
+      <button id="btn" type="button">Calculate</button>
+    </form>
+    <div id="recipe">
+      <h1>Recipe</h1>
+      <h2 id="title"></h2>
+      <h3 id="ingredients"></h3>
+      <h4 id="servings"></h4>
+      <p id="instructions"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
